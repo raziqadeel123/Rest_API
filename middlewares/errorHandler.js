@@ -22,7 +22,6 @@ const errorHandler = (err, req, res, next) => {
     };
   }
 
-  console.log(data);
   return res.status(statusCode).json(data);
 };
 
