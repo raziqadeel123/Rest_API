@@ -14,4 +14,6 @@ router.post('/login', loginController.login);
 router.get('/getuser', auth, userController.getUser);
 router.post('/refreshToken', refreshTokenfController.refreshToken);
 
+router.post('/logout', auth, loginController.logout);
+
 export default router;
